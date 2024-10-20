@@ -1,5 +1,6 @@
 ---
-
+const pageTitle = "About Me!";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -8,13 +9,13 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>About me</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
-		<h1>About me!</h1>
+		<h1>{pageTitle}</h1>
         <h2>Outline</h2>
         <p>Hi I'm Jake, I'm currently in my final year of full time education, after which I'm hoping to read cybersecurity in university</p>
         <h2>Subjects</h2>
