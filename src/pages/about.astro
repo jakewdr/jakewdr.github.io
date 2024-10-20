@@ -1,6 +1,8 @@
 ---
 const pageTitle = "About Me!";
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -12,9 +14,7 @@ import "../styles/global.css";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Navigation />
 		<h1>{pageTitle}</h1>
         <h2>Outline</h2>
         <p>Hi I'm Jake, I'm currently in my final year of full time education, after which I'm hoping to read cybersecurity in university</p>
@@ -35,5 +35,6 @@ import "../styles/global.css";
         <h2>Music</h2>
         <p>I utterly love music, I listen to lots of post rock, alternative rap and various other subgenres</p>
         <p>If you want to check up on my full libary go no further then my <a href="https://www.last.fm/user/jwke">LastFM</a></p>
+    <Footer />
     </body>
 </html>
