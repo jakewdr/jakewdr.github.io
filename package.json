@@ -1,0 +1,21 @@
+{
+  "name": "jakewdr.github.io",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "yarn run format && astro dev",
+    "start": "astro dev",
+    "build": "yarn run format && astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "yarn biome check --write"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.16.6",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}
