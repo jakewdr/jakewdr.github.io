@@ -1,9 +1,14 @@
 html {
-    background-color: #f1f5f9;
+    background-color: #000000;
     font-family: sans-serif;
 }
 
+a {
+    color: #558ed8;
+}
+
 body {
+    color: #ffffff;
     margin: 0 auto;
     width: 100%;
     max-width: 80ch;
@@ -24,7 +29,7 @@ h1 {
 
 .nav-links {
     width: 100%;
-    color: #D3D3D3;
+    color: #d3d3d3;
     top: 5rem;
     left: 48px;
     background-color: #558ed8;
@@ -44,7 +49,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #D3D3D3;
+    background-color: #01042a;
 }
 
 .expanded {
