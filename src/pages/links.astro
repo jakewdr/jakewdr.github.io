@@ -1,0 +1,35 @@
+---
+const pageTitle = "Links";
+import "../styles/global.css";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+import Snow from "../components/Snow.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/elephant.jpg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+		<Navigation />
+		<h1>{pageTitle}</h1>
+        <div class="links">
+            <h2>SOCIALS</h2>
+            <a href="https://www.instagram.com/jakewdr/"><button>INSTAGRAM</button></a>
+            <a href="https://letterboxd.com/jakewdr/"><button>LETTERBOXD</button></a>
+            <h2>PROGRAMMING</h2>
+            <a href="https://github.com/jakewdr"><button>GITHUB</button></a>
+            <h2>MUSIC</h2>
+            <a href="https://open.spotify.com/user/31nfpks2pgzjofrhwbdk7xx3ovli"><button>SPOTIFY</button></a>
+            <a href="https://www.last.fm/user/jwke"><button>LASTFM</button></a>
+            <a href="https://stats.fm/wdr"><button>STATSFM</button></a>
+            <a href="https://i.airbuds.fm/jakewdr/s3zwJM3TkK"><button>AIRBUDS</button></a>
+
+        </div>
+		<Snow/>
+	</body>
+</html>
