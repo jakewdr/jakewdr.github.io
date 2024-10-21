@@ -1041,6 +1041,13 @@ array-iterate@^2.0.0:
   resolved "https://registry.yarnpkg.com/array-iterate/-/array-iterate-2.0.1.tgz#6efd43f8295b3fee06251d3d62ead4bd9805dd24"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
+astro-particles@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/astro-particles/-/astro-particles-2.10.0.tgz#b9bb6e3b02f03c182efc4c3c2b389723a62c44d5"
+  integrity sha512-DE1azMdcu2dkXxEKd7seoRqbhlh4UnTfinWM+RF5jm00tPtaJ+cjrz5nKHRnzYcyTAR18MaRAC4lIKf3tu86iQ==
+  dependencies:
+    tsparticles-engine "^2.10.1"
+
 astro@^4.16.6:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/astro/-/astro-4.16.6.tgz#ed09c86c4ecd0afa7fa688c5a28af616cda87128"
@@ -2956,6 +2963,11 @@ tslib@^2.4.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.0.tgz#d124c86c3c05a40a91e6fdea4021bd31d377971b"
   integrity sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==
+
+tsparticles-engine@^2.10.1:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/tsparticles-engine/-/tsparticles-engine-2.12.0.tgz#4a52a8de4ab6085180abf27f4720f47caa1455fc"
+  integrity sha512-ZjDIYex6jBJ4iMc9+z0uPe7SgBnmb6l+EJm83MPIsOny9lPpetMsnw/8YJ3xdxn8hV+S3myTpTN1CkOVmFv0QQ==
 
 type-fest@^4.21.0:
   version "4.26.1"
