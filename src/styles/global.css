@@ -32,8 +32,7 @@ h1 {
     color: #d3d3d3;
     top: 5rem;
     left: 48px;
-    background-color: #558ed8;
-    display: none;
+    display: block;
     margin: 0;
 }
 
@@ -72,47 +71,3 @@ h1 {
     }
 }
 
-/* Link-tree style*/
-
-.links {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.links button {
-    text-transform: full-width;
-    margin-right: 6px;
-    margin-bottom: 20px;
-    padding: 10px;
-    width: 300px;
-    border: none;
-    border-radius: 6px;
-    outline: none;
-    color: #ffff;
-    background-color: #053254;
-}
-
-.links button:after {
-    position: absolute;
-    opacity: 0;  
-    top: 14px;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.links button:hover{
-    padding-right: 24px;
-    padding-left:8px;
-}
-
-.links button:hover:after {
-    opacity: 1;
-    right: 10px;
-}
