@@ -70,3 +70,22 @@ h1 {
     }
 }
 
+/* Water CSS Scrollbar */
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #001222;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #414873;
+}
