@@ -37,7 +37,7 @@ h1 {
 }
 
 .nav-links a {
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
@@ -67,7 +67,6 @@ h1 {
     .nav-links a {
         display: inline-block;
         padding: 15px 20px;
-        color: #558ed8;
     }
 }
 
