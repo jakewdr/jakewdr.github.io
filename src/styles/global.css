@@ -89,3 +89,7 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
     background: #414873;
 }
+
+.big-text {
+    font-size: 1.5rem;
+}
