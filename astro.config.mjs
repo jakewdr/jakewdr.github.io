@@ -8,8 +8,8 @@ export default defineConfig({
     vite: {
         optimizeDeps: {
             include: [
-                "astro-particles", 
-                "tsparticles-engine", 
+                "astro-particles",
+                "tsparticles-engine",
                 "tsparticles-basic"
             ],
             exclude: [
