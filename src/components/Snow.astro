@@ -27,11 +27,11 @@ const options: ISourceOptions = {
 
 <script>
     import { type Container, type Engine} from "tsparticles-engine";
-    import { loadFull } from "tsparticles";
+    import { loadBasic } from "tsparticles-basic";
 
 
     window.particlesInit = async function (engine: Engine) {
-        await loadFull(engine);
+        await loadBasic(engine);
     }
     
     window.particlesLoaded = function (container: Container) {

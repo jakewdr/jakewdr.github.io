@@ -11,15 +11,15 @@
     "format": "yarn biome check --write"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^4.16.6",
     "astro-particles": "^2.10.0",
-    "tsparticles": "2.12",
-    "tsparticles-engine": "^2.12.0",
-    "tsparticles-preset-snow": "^2.12.0",
-    "typescript": "^5.6.3"
+    "tsparticles-basic": "^2.12.0",
+    "tsparticles-engine": "^2.12.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4"
+    "@astrojs/check": "^0.9.4",
+    "@biomejs/biome": "1.9.4",
+    "astro": "^4.16.8",
+    "terser": "^5.36.0",
+    "typescript": "^5.6.3"
   }
 }
