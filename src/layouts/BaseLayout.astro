@@ -3,7 +3,7 @@ const pageTitle = "Home";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
-import Snow from "../components/Snow.astro";
+import Snow from "../components/Snow.tsx";
 ---
 
 <html lang="en">
@@ -18,6 +18,7 @@ import Snow from "../components/Snow.astro";
 		<Navigation />
 		<h1>{pageTitle}</h1>
 		<Footer />
-		<Snow/>
+		<Snow client:only="react"/>
+		<Snow client:idle/>
 	</body>
 </html>
