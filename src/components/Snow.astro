@@ -31,10 +31,13 @@ const options: ISourceOptions = {
 
 
     window.particlesInit = async function (engine: Engine) {
-        await loadBasic(engine);
+        if (document.readyState === "complete" || document.readyState === "interactive"){
+            await loadBasic(engine);
+        }
+        
     }
     
-    window.particlesLoaded = function (container: Container) {
+    window.particlesLoaded = async function (container: Container) {
         console.log("particlesLoaded callback");
     }
 </script>
