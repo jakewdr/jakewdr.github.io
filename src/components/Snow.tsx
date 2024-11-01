@@ -1,7 +1,7 @@
 import { loadBasic } from "@tsparticles/basic";
 import type { Container, ISourceOptions } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useCallback } from "react";
 
 const Snow = () => {
     const [init, setInit] = useState(false);
@@ -14,9 +14,9 @@ const Snow = () => {
         });
     }, []);
 
-    const particlesLoaded = async (container?: Container): Promise<void> => {
+    const particlesLoaded = useCallback(async (container?: Container): Promise<void> => {
         console.log(container);
-    };
+    }, []);
 
     const options: ISourceOptions = useMemo(
         () => ({
