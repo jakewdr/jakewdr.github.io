@@ -14,6 +14,7 @@
     "@tsparticles/basic": "^3.5.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
+    "million": "^3.1.11",
     "react": "^18.3.1"
   },
   "devDependencies": {
