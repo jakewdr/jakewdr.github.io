@@ -1,4 +1,4 @@
-import type React from "react";
+import type React from "preact/compat";
 
 const NavLinks: React.FC = () => {
     return (

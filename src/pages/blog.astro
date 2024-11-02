@@ -19,8 +19,8 @@ import Snow from "../components/Snow.tsx";
     <ul>
         <li><a href="/posts/template/"><b>[TEMPLATE]</b></a></li>
     </ul>
-    <Footer />
-    <Snow client:only="react"/>
+    <Footer client:visible/>
+    <Snow client:only="preact"/>
 	<Snow client:idle/>
     </body>
 </html>

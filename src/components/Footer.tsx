@@ -1,5 +1,3 @@
-import type React from "react";
-
 const Footer: React.FC = () => {
     const footerStyle: React.CSSProperties = {
         display: "flex",

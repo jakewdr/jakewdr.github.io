@@ -27,8 +27,8 @@ import Snow from "../components/Snow.tsx";
 				<li><b><a href="https://github.com/jakewdr">[GitHub]</a></b></li>
 			</ul>
 		</div>
-		<Footer />
-		<Snow client:only="react"/>
+		<Footer client:visible/>
+		<Snow client:only="preact"/>
 		<Snow client:idle/>
 	</body>
 </html>

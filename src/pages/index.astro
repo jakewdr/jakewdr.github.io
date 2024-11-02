@@ -18,8 +18,8 @@ import Snow from "../components/Snow.tsx";
 		<Navigation />
 		<h1>{pageTitle}</h1>
 		<p><i><q>An idiot admires complexity, a genius admires simplicity</q></i> - Terry Davis</p>
-		<Footer />
-		<Snow client:only="react"/>
+		<Footer client:visible/>
+		<Snow client:only="preact"/>
 		<Snow client:idle/>
 	</body>
 </html>

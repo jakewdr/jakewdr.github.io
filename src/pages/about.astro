@@ -41,8 +41,8 @@ import Snow from "../components/Snow.tsx";
         <h2>Music</h2>
         <p>I listen to lots of albums in a variety of subgenres</p>
         <p>If you want to check up on my full libary go no further then my <a href="https://www.last.fm/user/jwke">LastFM</a></p>
-    <Footer />
-    <Snow client:only="react"/>
+    <Footer client:visible/>
+    <Snow client:only="preact"/>
 	<Snow client:idle/>
     </body>
 </html>
