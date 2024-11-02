@@ -1,4 +1,3 @@
-import { loadBasic } from "@tsparticles/basic";
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
 import pkg from "@tsparticles/preact";
 const { Particles, initParticlesEngine } = pkg;
@@ -9,6 +8,7 @@ const Snow = () => {
 
     useEffect(() => {
         initParticlesEngine(async (engine: Engine) => {
+            const { loadBasic } = await import("@tsparticles/basic");
             await loadBasic(engine);
         }).then(() => {
             setInit(true);
