@@ -1,10 +1,9 @@
 import type { Container, Engine, ISourceOptions } from "@tsparticles/engine";
-import pkg from "@tsparticles/preact";
-const { Particles, initParticlesEngine } = pkg;
+const { Particles, initParticlesEngine } = await import("@tsparticles/preact");
 import { useCallback, useEffect, useMemo, useState } from "preact/hooks";
 
 const Snow = () => {
-    const [init, setInit] = useState(false);
+    const [, setInit] = useState(false);
 
     useEffect(() => {
         initParticlesEngine(async (engine: Engine) => {
