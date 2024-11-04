@@ -28,6 +28,9 @@ const Snow = () => {
                 zIndex: -1,
             },
             particles: {
+                size: {
+                    value: 4,
+                },
                 color: {
                     value: "#ffffff",
                 },

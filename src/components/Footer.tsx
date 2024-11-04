@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     const pStyle: React.CSSProperties = {
         padding: "0.5rem 1rem",
         color: "#000000",
-        backgroundColor: "#D3D3D3",
+        backgroundColor: "#E6E6E6",
         textDecoration: "none",
     };
 

@@ -1,27 +1,27 @@
 {
-  "name": "jakewdr.github.io",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "yarn run format && astro dev",
-    "start": "astro dev",
-    "build": "yarn run format && astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "format": "yarn biome check --write"
-  },
-  "dependencies": {
-    "@tsparticles/basic": "^3.5.0",
-    "@tsparticles/engine": "^3.5.0",
-    "@tsparticles/preact": "^3.0.0",
-    "preact": "^10.24.3"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/preact": "^3.5.3",
-    "@biomejs/biome": "1.9.4",
-    "@million/lint": "^1.0.11",
-    "astro": "^4.16.8",
-    "typescript": "^5.6.3"
-  }
+    "name": "jakewdr.github.io",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "yarn run format && astro dev",
+        "start": "astro dev",
+        "build": "yarn run format && astro check && astro build",
+        "preview": "astro preview",
+        "astro": "astro",
+        "format": "yarn biome check --write"
+    },
+    "dependencies": {
+        "@tsparticles/basic": "^3.5.0",
+        "@tsparticles/engine": "^3.5.0",
+        "@tsparticles/preact": "^3.0.0",
+        "preact": "^10.24.3"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.4",
+        "@astrojs/preact": "^3.5.3",
+        "@biomejs/biome": "1.9.4",
+        "@million/lint": "^1.0.11",
+        "astro": "^4.16.8",
+        "typescript": "^5.6.3"
+    }
 }
