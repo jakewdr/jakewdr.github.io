@@ -1,4 +1,3 @@
-import preact from "@astrojs/preact";
 // @ts-check
 import { defineConfig } from "astro/config";
 
@@ -10,8 +9,8 @@ export default defineConfig({
     vite: {
         build: {
             cssCodeSplit: true,
+            chunkSizeWarningLimit: 100,
         },
     },
 
-    integrations: [preact()],
 });

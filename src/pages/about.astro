@@ -1,9 +1,9 @@
 ---
 const pageTitle = "About Me!";
 import "../styles/global.css";
-import Footer from "../components/Footer.tsx";
-import Navigation from "../components/Navigation.tsx";
-import Snow from "../components/Snow.tsx";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+import Snow from "../components/Snow.astro";
 ---
 
 <html lang="en">
@@ -41,8 +41,7 @@ import Snow from "../components/Snow.tsx";
         <h2>Music</h2>
         <p>I listen to lots of albums in a variety of subgenres</p>
         <p>If you want to check up on my full libary go no further then my <a href="https://www.last.fm/user/jwke">LastFM</a></p>
-    <Footer client:visible/>
-    <Snow client:only="preact"/>
-	<Snow client:idle/>
+    <Footer />
+    <Snow />
     </body>
 </html>

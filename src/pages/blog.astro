@@ -1,9 +1,9 @@
 ---
 const pageTitle = "Blog";
 import "../styles/global.css";
-import Footer from "../components/Footer.tsx";
-import Navigation from "../components/Navigation.tsx";
-import Snow from "../components/Snow.tsx";
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+import Snow from "../components/Snow.astro";
 ---
 <html lang="en">
     <head>
@@ -19,8 +19,7 @@ import Snow from "../components/Snow.tsx";
     <ul>
         <li><a href="/posts/template/"><b>[TEMPLATE]</b></a></li>
     </ul>
-    <Footer client:visible/>
-    <Snow client:only="preact"/>
-	<Snow client:idle/>
+    <Footer />
+    <Snow />
     </body>
 </html>
