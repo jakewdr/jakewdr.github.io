@@ -3,7 +3,7 @@ const pageTitle = "About Me!";
 import "../styles/global.css";
 import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
-import Snow from "../components/Snow.astro";
+import { Snow } from "../components/Snow.tsx";
 ---
 
 <html lang="en">
@@ -42,6 +42,6 @@ import Snow from "../components/Snow.astro";
         <p>I listen to lots of albums in a variety of subgenres</p>
         <p>If you want to check up on my full libary go no further then my <a href="https://www.last.fm/user/jwke">LastFM</a></p>
     <Footer />
-    <Snow />
+    <Snow client:only="preact"/>
     </body>
 </html>
