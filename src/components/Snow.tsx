@@ -9,10 +9,11 @@ const Snow = () => {
                 height: "100vh",
             }}
             color="#d9d9d9"
-            snowflakeCount={175}
-            wind={[-0.5, 0.5]}
-            speed={[1, 1.5]}
-            radius={[3, 4]}
+            snowflakeCount={150}
+            wind={[0, 0]}
+            speed={[0.5, 1]}
+            radius={[2, 3]}
+            changeFrequency={100}
         />
     );
 };
