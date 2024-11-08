@@ -12,7 +12,7 @@ export default defineConfig({
     vite: {
         build: {
             cssCodeSplit: true,
-            chunkSizeWarningLimit: 100,
+            chunkSizeWarningLimit: 20,
         },
         plugins: [visualizer()],
     },
