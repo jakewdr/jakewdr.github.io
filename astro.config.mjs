@@ -4,6 +4,8 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 import preact from "@astrojs/preact";
 
+import partytown from "@astrojs/partytown";
+
 // https://astro.build/config
 
 export default defineConfig({
@@ -14,8 +16,14 @@ export default defineConfig({
             cssCodeSplit: true,
             chunkSizeWarningLimit: 20,
         },
+        optimizeDeps: {
+            force: true,
+        },
         plugins: [visualizer()],
     },
 
-    integrations: [preact()],
+    integrations: [
+        preact(),
+        partytown({ config: { forward: ["dataLayer.push"] } }),
+    ],
 });

@@ -11,6 +11,7 @@
         "format": "yarn biome check --write"
     },
     "dependencies": {
+        "@astrojs/partytown": "^2.1.2",
         "@astrojs/preact": "^3.5.3",
         "preact": "^10.24.3",
         "react-snowfall": "^2.1.1"

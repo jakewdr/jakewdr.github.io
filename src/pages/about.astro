@@ -13,6 +13,16 @@ import { Snow } from "../components/Snow.tsx";
 		<link rel="icon" type="image/x-icon" href="/elephant.jpg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
+        <!-- Google tag (gtag.js) -->
+        <script type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-18TEL9N92D"></script>
+        <script type="text/partytown">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-18TEL9N92D');
+        </script>
+
 		<title>{pageTitle}</title>
 	</head>
 	<body>
