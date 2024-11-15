@@ -4,6 +4,8 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 import preact from "@astrojs/preact";
 
+import tailwind from "@astrojs/tailwind";
+
 // https://astro.build/config
 
 export default defineConfig({
@@ -20,5 +22,5 @@ export default defineConfig({
         plugins: [visualizer()],
     },
 
-    integrations: [preact()],
+    integrations: [preact(), tailwind()],
 });

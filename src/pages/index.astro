@@ -1,13 +1,9 @@
 ---
 const pageTitle = "Home";
-import "../styles/global.css";
-import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
-//import Snow from "../components/Snow.astro";
 import { Snow } from "../components/Snow.tsx";
 ---
 
-<html lang="en">
+<html lang="en" class="bg-new-blue-one">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="Homepage for jakewdr's personal website">
@@ -15,13 +11,62 @@ import { Snow } from "../components/Snow.tsx";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+        <style>
+            @keyframes blink {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+    
+            .blinking-text {
+                color: white;
+                animation: blink 0.5s infinite; 
+            }
+        </style>
+    </head>
+	<body class="text-slate-200">
+		<div class="flex-initial">
+            <div class="w-full h-9 font-pixelify-sans justify-center flex text-2xl align-middle items-center">
+                <p class="align-self-center font-thin">jakewdr</p>
+                <p class="blinking-text">_</p>
+            </div>
+        </div>
+        <header class="p-8 md:p-16 md:pb-0 max-w-full md:w-[55rem] space-y-5 font-ibm-plex-mono">
+            
+            <h4 class="flex gap-2 items-center text-2xl font-bold">
+                <img
+                    class="w-12 h-12 hover:animate-spin motion-reduce:animate-none ease-in-out rounded-full"
+                    src="/elephant.jpg"
+                    loading="eager"
+                    decoding="async"
+                    alt="glow pt2 elephant"
+                />
+                Jake Reddy
+            </h4>
 
-	</head>
-	<body>
-		<Navigation />
-		<h1>{pageTitle}</h1>
-		<p><i><q>An idiot admires complexity, a genius admires simplicity</q></i> - Terry Davis</p>
-		<Footer />
+            <p class="font-semibold text-lg">
+                Hi, at the moment I'm in my final year of full time education in the United Kingdom, after which I will read Cyber-security in university.
+            </p>
+            
+            <p class="font-semibold text-lg">
+                I love to read <a class="underline font-bold text-white hover:bg-link-hover" href="https://myanimelist.net/profile/jwke">manga</a>, watch <a class="underline text-white font-bold hover:bg-link-hover" href="https://letterboxd.com/jakewdr/">films</a> and listen to <a class="underline text-white  font-bold hover:bg-link-hover" href="https://www.last.fm/user/jwke">music</a>!
+            </p>
+
+            <p class="flex flex-wrap gap-10"></p>
+                <span class="font-bold text-white text-xl">
+                    <a class="underline hover:bg-link-hover" href="https://github.com/jakewdr">GitHub</a> <t> • </t>
+                    <a class="underline hover:bg-link-hover" href="https://www.instagram.com/jakewdr/">Instagram</a> <t> • </t>
+                    <a class="underline hover:bg-link-hover" href="https://open.spotify.com/user/31nfpks2pgzjofrhwbdk7xx3ovli">Spotify</a> 
+                </span>
+            </p>
+
+        </header>
 		<Snow client:only="preact"/>
 	</body>
 </html>
