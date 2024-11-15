@@ -22,5 +22,5 @@ export default defineConfig({
         plugins: [visualizer()],
     },
 
-    integrations: [preact(), tailwind({applyBaseStyles: false})],
+    integrations: [preact(), tailwind({ applyBaseStyles: false })],
 });
