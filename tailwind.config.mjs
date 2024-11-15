@@ -11,7 +11,6 @@ export default {
 			},
 			colors: {
 				"new-blue-one": "#24283b",
-				"new-blue-two": "#1f2335",
 				"link-hover": "#0099ff"
 			}
 		},
