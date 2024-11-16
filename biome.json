@@ -45,6 +45,10 @@
                     "style": {
                         "useConst": "off",
                         "useImportType": "off"
+                    },
+                    "nursery": {
+                        "useSortedClasses": "warn",
+                        "noCommonJs": "warn"
                     }
                 }
             }
