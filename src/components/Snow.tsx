@@ -9,7 +9,7 @@ const Snow = () => {
                 height: "100vh",
             }}
             color="#E2E8F0"
-            snowflakeCount={200}
+            snowflakeCount={175}
             wind={[-0.25, 1.5]}
             speed={[0.5, 2]}
             radius={[2, 3]}

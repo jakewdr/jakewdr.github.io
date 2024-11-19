@@ -13,7 +13,7 @@ export default defineConfig({
 
     vite: {
         build: {
-            cssCodeSplit: true,
+            cssCodeSplit: false,
             chunkSizeWarningLimit: 20,
         },
         optimizeDeps: {
