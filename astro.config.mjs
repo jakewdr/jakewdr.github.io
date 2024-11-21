@@ -1,10 +1,12 @@
 // @ts-check
+import preact from "@astrojs/preact";
+import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
+
+import { PluginPure } from "rollup-plugin-pure";
 import { visualizer } from "rollup-plugin-visualizer";
 
-import preact from "@astrojs/preact";
-
-import tailwind from "@astrojs/tailwind";
+import compress from "astro-compress";
 
 // https://astro.build/config
 
@@ -26,8 +28,28 @@ export default defineConfig({
         optimizeDeps: {
             force: true,
         },
-        plugins: [visualizer()],
+        plugins: [
+            visualizer(),
+            PluginPure({
+                include: [/(?<!im)pure\.js$/],
+                functions: [],
+            }),
+        ],
     },
 
-    integrations: [preact(), tailwind()],
+    integrations: [
+        preact(),
+        tailwind(),
+        compress({
+            CSS: true,
+            Image: false,
+            JavaScript: true,
+            Logger: 1,
+            HTML: {
+                "html-minifier-terser": {
+                    removeAttributeQuotes: false,
+                },
+            },
+        }),
+    ],
 });
