@@ -3,7 +3,6 @@ import preact from "@astrojs/preact";
 import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
-import { PluginPure } from "rollup-plugin-pure";
 import { visualizer } from "rollup-plugin-visualizer";
 
 import compress from "astro-compress";
@@ -28,13 +27,7 @@ export default defineConfig({
         optimizeDeps: {
             force: true,
         },
-        plugins: [
-            visualizer(),
-            PluginPure({
-                include: [/(?<!im)pure\.js$/],
-                functions: [],
-            }),
-        ],
+        plugins: [visualizer()],
     },
 
     integrations: [
@@ -49,7 +42,7 @@ export default defineConfig({
                 "html-minifier-terser": {
                     removeAttributeQuotes: false,
                     removeTagWhitespace: false,
-                    collapseWhitespace: false
+                    collapseWhitespace: false,
                 },
             },
         }),
