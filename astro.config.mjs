@@ -15,6 +15,13 @@ export default defineConfig({
         build: {
             cssCodeSplit: false,
             chunkSizeWarningLimit: 20,
+            rollupOptions: {
+                output: {
+                    assetFileNames() {
+                        return "assets/[name].[hash][extname]";
+                    },
+                },
+            },
         },
         optimizeDeps: {
             force: true,
