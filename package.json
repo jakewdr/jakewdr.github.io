@@ -11,9 +11,9 @@
         "format": "yarn biome check --write"
     },
     "dependencies": {
-        "react-snowfall": "^2.1.1",
         "@astrojs/preact": "^3.5.3",
-        "preact": "^10.24.3"
+        "preact": "^10.24.3",
+        "react-snowfall": "^2.1.1"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
