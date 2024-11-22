@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "preact/compat";
+import { Suspense, lazy } from "preact/compat";
 
 const Snowfall = lazy(() => import("react-snowfall"));
 
