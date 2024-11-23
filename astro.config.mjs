@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 import { visualizer } from "rollup-plugin-visualizer";
+import inlineSource from "vite-plugin-inline-source";
 
 import compress from "astro-compress";
 
@@ -27,7 +28,7 @@ export default defineConfig({
         optimizeDeps: {
             force: true,
         },
-        plugins: [visualizer()],
+        plugins: [visualizer(), inlineSource()],
     },
 
     integrations: [

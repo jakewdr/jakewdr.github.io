@@ -2,6 +2,7 @@
 const pageTitle = "Home";
 import Image from "astro/components/Image.astro";
 import { Snow } from "../components/Snow.tsx";
+import "../css/blink.css";
 import "../css/fonts.css";
 ---
 
@@ -13,22 +14,6 @@ import "../css/fonts.css";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-        <style type="text/css"> 
-            @keyframes blink {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-    
-            .blinking-text {
-                color: white;
-                animation: blink 0.5s infinite; 
-            }
-
-        </style>
     </head>
 	<body class="text-slate-200">
 		<div class="flex-initial">
