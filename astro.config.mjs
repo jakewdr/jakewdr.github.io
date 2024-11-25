@@ -4,9 +4,6 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 import { visualizer } from "rollup-plugin-visualizer";
-import inlineSource from "vite-plugin-inline-source";
-
-import compress from "astro-compress";
 
 // https://astro.build/config
 
@@ -15,8 +12,10 @@ export default defineConfig({
 
     vite: {
         build: {
-            cssCodeSplit: false,
             chunkSizeWarningLimit: 20,
+            minify: "esbuild",
+            cssMinify: "lightningcss",
+            cssCodeSplit: true,
             rollupOptions: {
                 output: {
                     assetFileNames() {
@@ -28,24 +27,8 @@ export default defineConfig({
         optimizeDeps: {
             force: true,
         },
-        plugins: [visualizer(), inlineSource()],
+        plugins: [visualizer()],
     },
 
-    integrations: [
-        preact(),
-        tailwind(),
-        compress({
-            CSS: true,
-            Image: false,
-            JavaScript: true,
-            Logger: 1,
-            HTML: {
-                "html-minifier-terser": {
-                    removeAttributeQuotes: false,
-                    removeTagWhitespace: false,
-                    collapseWhitespace: false,
-                },
-            },
-        }),
-    ],
+    integrations: [preact(), tailwind()],
 });
