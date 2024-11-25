@@ -4,7 +4,6 @@ import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 import { visualizer } from "rollup-plugin-visualizer";
-
 // https://astro.build/config
 
 export default defineConfig({
@@ -16,6 +15,9 @@ export default defineConfig({
             minify: "esbuild",
             cssMinify: "lightningcss",
             cssCodeSplit: true,
+            modulePreload: {
+                polyfill: false,
+            },
             rollupOptions: {
                 output: {
                     assetFileNames() {
@@ -28,6 +30,10 @@ export default defineConfig({
             force: true,
         },
         plugins: [visualizer()],
+    },
+
+    build: {
+        inlineStylesheets: "never",
     },
 
     integrations: [preact(), tailwind()],
