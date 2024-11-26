@@ -22,7 +22,11 @@
         "rules": {
             "recommended": true,
             "nursery": {
-                "useSortedClasses": "warn",
+                "useSortedClasses": {
+                    "level": "warn",
+                    "fix": "safe",
+                    "options": {}
+                },
                 "noCommonJs": "warn"
             }
         }
