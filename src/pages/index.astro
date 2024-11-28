@@ -36,25 +36,52 @@ import "../css/fonts.css";
                 />
                 Jake Reddy
             </h4>
-
-            <p class="font-semibold text-lg">
+            
+            <p class="font-semibold">
                 Hi, at the moment I'm in my final year of full time education in the United Kingdom, after which I will read Cyber-security in university.
             </p>
-            
-            <p class="font-semibold text-lg">
-                I love to read <a rel="dns-prefetch" class="underline font-bold text-slate-100 hover:bg-link-hover" href="https://myanimelist.net/profile/jwke">manga</a>, watch <a rel="dns-prefetch" class="underline text-slate-100 font-bold hover:bg-link-hover" href="https://letterboxd.com/jakewdr/">films</a> and listen to <a rel="dns-prefetch" class="underline text-slate-100 font-bold hover:bg-link-hover" href="https://www.last.fm/user/jwke">music</a>!
+                
+            <p class="font-semibold">
+                I love to read <a rel="dns-prefetch" class="decoration-2 underline font-bold text-slate-100 hover:bg-link-hover font-pixelify-sans text-lg" href="https://myanimelist.net/profile/jwke">manga</a>, watch <a rel="dns-prefetch" class="decoration-2 underline font-bold text-slate-100 hover:bg-link-hover font-pixelify-sans text-lg" href="https://letterboxd.com/jakewdr/">films</a> and listen to <a rel="dns-prefetch" class="decoration-2 underline font-bold text-slate-100 hover:bg-link-hover font-pixelify-sans text-lg" href="https://www.last.fm/user/jwke">music</a>!
             </p>
 
             <p class="flex flex-wrap gap-10"></p>
-                <span class="font-semibold text-slate-100 text-xl font-pixelify-sans">
+                <span class="font-semibold text-slate-100 text-lg font-pixelify-sans">
                     <a rel="dns-prefetch" class="underline hover:bg-link-hover" href="https://github.com/jakewdr">GitHub</a> <t> • </t>
                     <a rel="dns-prefetch" class="underline hover:bg-link-hover" href="https://www.instagram.com/jakewdr/">Instagram</a> <t> • </t>
                     <a rel="dns-prefetch" class="underline hover:bg-link-hover" href="https://open.spotify.com/user/31nfpks2pgzjofrhwbdk7xx3ovli">Spotify</a> <t> • </t>
                     <a rel="dns-prefetch" class="underline hover:bg-link-hover" href="https://piedpapers.com/show_user/jakewdr">PiedPapers</a>
                 </span>
             </p>
+            <section class="flex flex-wrap md:flex-nowrap gap-3">
+                <div class="w-32 text-xl font-pixelify-sans italic animate-pulse text-slate-100">
+                    projects
+                </div>
+                <div class="flex flex-wrap w-full gap-y-2 gap-x-5">
+                    <div class="w-full md:w-60">
+                        <p>
+                            <a href="https://github.com/jakewdr/effectual", class="font-pixelify-sans text-xl underline hover:bg-link-hover">Effectual</a>
+                        </p>{' '}
+                        <p>An easily hackable and configurable module bundler for python</p>
+                    </div>
+                    <div class="w-full md:w-60">
+                        <p>
+                            <a href="https://github.com/jakewdr/middlefm", class="font-pixelify-sans text-xl underline hover:bg-link-hover">MiddleFM</a>
+                        </p>{' '}
+                        <p>A middle-layer between spotify and lastFM</p>
+                    </div>
+                    <div class="w-full md:w-60">
+                        <p>
+                            <a href="https://github.com/earthmoverproject", class="font-pixelify-sans text-xl underline hover:bg-link-hover">Earthmover</a>
+                        </p>{' '}
+                        <p>Various anti AI training tools</p>
+                    </div>
+                    
+                </div>
+            </section>
 
         </header>
+        
 		<Snow client:idle client:only="preact"/>
 	</body>
 </html>
