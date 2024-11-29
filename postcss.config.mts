@@ -6,5 +6,6 @@ export const plugins = [
     purgecss({
         content: ["src/**/*.css", "src/**/*.astro", "src/**/*.html"],
         defaultExtractor: content => content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [],
-    })
+    }),
+
 ]
