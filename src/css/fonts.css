@@ -1,5 +1,6 @@
 /* latin */
 @font-face {
+    text-rendering: optimizeSpeed;
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 600;
@@ -12,6 +13,7 @@
 
 /* latin */
 @font-face {
+    text-rendering: optimizeSpeed;
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 700;
@@ -24,6 +26,7 @@
 
 /* latin */
 @font-face {
+    text-rendering: optimizeSpeed;
     font-family: "Pixelify Sans";
     font-style: normal;
     font-weight: 600;
