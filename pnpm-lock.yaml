@@ -20,7 +20,7 @@ importers:
         version: 10.25.1
       react-snowfall:
         specifier: ^2.1.2
-        version: 2.2.0(@preact/compat@17.1.2(preact@10.25.1))
+        version: 2.2.0(@preact/compat@17.1.2(preact@10.25.1))(@preact/compat@17.1.2(preact@10.25.1))
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -50,6 +50,9 @@ importers:
         specifier: ^8.4.49
         version: 8.4.49
       react:
+        specifier: npm:@preact/compat@17.1.2
+        version: '@preact/compat@17.1.2(preact@10.25.1)'
+      react-dom:
         specifier: npm:@preact/compat@17.1.2
         version: '@preact/compat@17.1.2(preact@10.25.1)'
       rollup-plugin-visualizer:
@@ -4651,9 +4654,10 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
-  react-snowfall@2.2.0(@preact/compat@17.1.2(preact@10.25.1)):
+  react-snowfall@2.2.0(@preact/compat@17.1.2(preact@10.25.1))(@preact/compat@17.1.2(preact@10.25.1)):
     dependencies:
       react: '@preact/compat@17.1.2(preact@10.25.1)'
+      react-dom: '@preact/compat@17.1.2(preact@10.25.1)'
       react-fast-compare: 3.2.2
 
   read-cache@1.0.0:
