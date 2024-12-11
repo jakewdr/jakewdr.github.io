@@ -51,7 +51,11 @@
                         "useImportType": "off"
                     },
                     "nursery": {
-                        "useSortedClasses": "warn",
+                        "useSortedClasses": {
+                            "level": "warn",
+                            "fix": "unsafe",
+                            "options": {}
+                        },
                         "noCommonJs": "warn"
                     }
                 }
