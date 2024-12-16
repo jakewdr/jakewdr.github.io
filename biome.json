@@ -7,7 +7,12 @@
     },
     "files": {
         "ignoreUnknown": false,
-        "include": ["src/**/**", "astro.config.mjs"]
+        "include": [
+            "src/**/**",
+            "astro.config.mts",
+            "postcss.config.mts",
+            "tailwind.config.mts"
+        ]
     },
     "formatter": {
         "enabled": true,
