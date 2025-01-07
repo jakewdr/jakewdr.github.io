@@ -9,7 +9,7 @@ export default {
             },
             colors: {
                 "new-blue-one": "#24283b",
-                "link-hover": "#0099ff",
+                "link-hover": "#8aa1aa",
             },
         },
     },
