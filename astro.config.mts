@@ -10,6 +10,9 @@ export default defineConfig({
     site: "https://jakewdr.github.io",
 
     vite: {
+        css: {
+            transformer: "postcss",
+        },
         build: {
             chunkSizeWarningLimit: 100,
             minify: "esbuild",
