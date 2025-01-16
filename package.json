@@ -3,23 +3,23 @@
     "type": "module",
     "version": "0.0.1",
     "scripts": {
-        "dev": "pnpm run format && astro dev",
+        "dev": "astro dev",
         "start": "astro dev",
-        "build": "pnpm run format && astro check && astro build",
+        "build": "astro check && astro build",
         "preview": "astro preview",
-        "astro": "astro",
-        "format": "pnpm biome check --write"
+        "astro": "astro"
     },
     "dependencies": {
         "@astrojs/preact": "^3.5.4",
         "@preact/compat": "^18.3.1",
         "preact": "^10.25.4",
-        "react-snowfall": "^2.2.0"
+        "react-snowfall": "^2.2.0",
+        "vite-plugin-biome": "^1.0.12"
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
         "@astrojs/tailwind": "^5.1.4",
-        "@biomejs/biome": "1.9.4",
+        "@biomejs/biome": "^1.9.4",
         "@fullhuman/postcss-purgecss": "^7.0.2",
         "@types/node": "^22.10.7",
         "astro": "^5.1.7",

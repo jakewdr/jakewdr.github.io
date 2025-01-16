@@ -24,6 +24,9 @@ importers:
       react-snowfall:
         specifier: ^2.2.0
         version: 2.2.0(@preact/compat@17.1.2(preact@10.25.4))(@preact/compat@17.1.2(preact@10.25.4))
+      vite-plugin-biome:
+        specifier: ^1.0.12
+        version: 1.0.12(@biomejs/biome@1.9.4)
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -32,7 +35,7 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4(astro@5.1.7(@types/node@22.10.7)(jiti@1.21.7)(lightningcss@1.29.1)(rollup@4.30.1)(terser@5.37.0)(typescript@5.7.3)(yaml@2.7.0))(tailwindcss@3.4.17)
       '@biomejs/biome':
-        specifier: 1.9.4
+        specifier: ^1.9.4
         version: 1.9.4
       '@fullhuman/postcss-purgecss':
         specifier: ^7.0.2
@@ -2445,6 +2448,11 @@ packages:
 
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
+
+  vite-plugin-biome@1.0.12:
+    resolution: {integrity: sha512-/+fBi1S+UEYtTu361IXQLZB8cSV/z4WoyK9cp/Dd1hHT6wGnFb+4Wcjwog3Y7HSUqNJbCdFWTYTyX4hwyO2iBg==}
+    peerDependencies:
+      '@biomejs/biome': ^1.8.0
 
   vite@5.4.11:
     resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==}
@@ -5365,6 +5373,10 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
+
+  vite-plugin-biome@1.0.12(@biomejs/biome@1.9.4):
+    dependencies:
+      '@biomejs/biome': 1.9.4
 
   vite@5.4.11(@types/node@22.10.7)(lightningcss@1.29.1)(terser@5.37.0):
     dependencies:
