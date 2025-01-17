@@ -23,13 +23,6 @@ export default defineConfig({
             modulePreload: {
                 polyfill: false,
             },
-            rollupOptions: {
-                output: {
-                    assetFileNames() {
-                        return "assets/[name].[hash][extname]";
-                    },
-                },
-            },
         },
         optimizeDeps: {
             force: false,
@@ -50,5 +43,5 @@ export default defineConfig({
         inlineStylesheets: "always",
     },
 
-    integrations: [preact(), tailwind()],
+    integrations: [tailwind(), preact()],
 });
