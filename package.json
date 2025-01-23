@@ -3,11 +3,12 @@
     "type": "module",
     "version": "0.0.1",
     "scripts": {
-        "dev": "astro dev",
+        "dev": "pnpm run format && astro dev",
         "start": "astro dev",
-        "build": "astro check && astro build",
+        "build": "pnpm run format && astro check && astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "format": "pnpm biome check --write"
     },
     "dependencies": {
         "@astrojs/preact": "^3.5.4",
@@ -17,20 +18,17 @@
     },
     "devDependencies": {
         "@astrojs/check": "^0.9.4",
-        "@astrojs/tailwind": "^5.1.5",
         "@biomejs/biome": "^1.9.4",
-        "@fullhuman/postcss-purgecss": "^7.0.2",
+        "@tailwindcss/vite": "^4.0.0",
         "@types/node": "^22.10.9",
         "astro": "^5.1.8",
-        "autoprefixer": "^10.4.20",
         "lightningcss": "^1.29.1",
-        "postcss": "^8.5.1",
+        "purgecss": "^7.0.2",
         "react": "npm:@preact/compat@18.3.1",
         "react-dom": "npm:@preact/compat@18.3.1",
         "rollup-plugin-visualizer": "^5.14.0",
-        "tailwindcss": "^3.4.17",
-        "typescript": "^5.7.3",
-        "vite-plugin-biome": "^1.0.12"
+        "tailwindcss": "^4.0.0",
+        "typescript": "^5.7.3"
     },
     "packageManager": "pnpm@9.15.0",
     "pnpm": {

@@ -1,19 +1,15 @@
-// @ts-check
 import preact from "@astrojs/preact";
-import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import biomePlugin from "vite-plugin-biome";
 
+import tailwindcss from "@tailwindcss/vite";
 import { visualizer } from "rollup-plugin-visualizer";
-// https://astro.build/config
 
 export default defineConfig({
     site: "https://jakewdr.github.io",
     compressHTML: true,
-
     vite: {
         css: {
-            transformer: "postcss",
+            transformer: "lightningcss",
         },
         build: {
             minify: "esbuild",
@@ -30,18 +26,13 @@ export default defineConfig({
         plugins: [
             visualizer(),
             // @ts-ignore
-            biomePlugin({
-                mode: "check",
-                files: ".",
-                applyFixes: true,
-                failOnError: true,
-            }),
+            tailwindcss(),
         ],
     },
 
     build: {
-        inlineStylesheets: "always",
+        inlineStylesheets: "never",
     },
 
-    integrations: [tailwind(), preact()],
+    integrations: [preact()],
 });
