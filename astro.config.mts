@@ -31,7 +31,7 @@ export default defineConfig({
     },
 
     build: {
-        inlineStylesheets: "never",
+        inlineStylesheets: "always",
     },
 
     integrations: [preact()],
