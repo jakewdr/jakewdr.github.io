@@ -1,6 +1,6 @@
 ---
 const pageTitle = "Home";
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import { Snow } from "../components/Snow.tsx";
 import "../css/global.css";
 ---
@@ -70,7 +70,6 @@ import "../css/global.css";
                 </div>
             </section>
         </header>
-
         <Snow client:visible client:only="preact" />
     </body>
 </html>
