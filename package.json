@@ -21,7 +21,7 @@
         "@biomejs/biome": "^1.9.4",
         "@tailwindcss/vite": "^4.0.3",
         "@types/node": "^22.13.1",
-        "astro": "^5.2.3",
+        "astro": "^5.2.5",
         "lightningcss": "^1.29.1",
         "react": "npm:@preact/compat@18.3.1",
         "react-dom": "npm:@preact/compat@18.3.1",
