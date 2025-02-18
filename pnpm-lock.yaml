@@ -14,16 +14,16 @@ importers:
     dependencies:
       '@astrojs/preact':
         specifier: ^3.5.4
-        version: 3.5.4(@babel/core@7.26.9)(@types/node@22.13.4)(lightningcss@1.29.1)(preact@10.26.0)(terser@5.37.0)
+        version: 3.5.4(@babel/core@7.26.9)(@types/node@22.13.4)(lightningcss@1.29.1)(preact@10.26.2)(terser@5.37.0)
       '@preact/compat':
         specifier: ^18.3.1
-        version: 18.3.1(preact@10.26.0)
+        version: 18.3.1(preact@10.26.2)
       preact:
-        specifier: ^10.26.0
-        version: 10.26.0
+        specifier: ^10.26.2
+        version: 10.26.2
       react-snowfall:
         specifier: ^2.2.0
-        version: 2.2.0(@preact/compat@18.3.1(preact@10.26.0))(@preact/compat@18.3.1(preact@10.26.0))
+        version: 2.2.0(@preact/compat@18.3.1(preact@10.26.2))(@preact/compat@18.3.1(preact@10.26.2))
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
@@ -45,10 +45,10 @@ importers:
         version: 1.29.1
       react:
         specifier: npm:@preact/compat@18.3.1
-        version: '@preact/compat@18.3.1(preact@10.26.0)'
+        version: '@preact/compat@18.3.1(preact@10.26.2)'
       react-dom:
         specifier: npm:@preact/compat@18.3.1
-        version: '@preact/compat@18.3.1(preact@10.26.0)'
+        version: '@preact/compat@18.3.1(preact@10.26.2)'
       rollup-plugin-visualizer:
         specifier: ^5.14.0
         version: 5.14.0(rollup@4.34.8)
@@ -1254,8 +1254,8 @@ packages:
     resolution: {integrity: sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==}
     engines: {node: '>=4'}
 
-  electron-to-chromium@1.5.101:
-    resolution: {integrity: sha512-L0ISiQrP/56Acgu4/i/kfPwWSgrzYZUnQrC0+QPFuhqlLP1Ir7qzPPDVS9BcKIyWTRU8+o6CC8dKw38tSWhYIA==}
+  electron-to-chromium@1.5.102:
+    resolution: {integrity: sha512-eHhqaja8tE/FNpIiBrvBjFV/SSKpyWHLvxuR9dPTdo+3V9ppdLmFB7ZZQ98qNovcngPLYIz0oOBF9P0FfZef5Q==}
 
   emmet@2.4.11:
     resolution: {integrity: sha512-23QPJB3moh/U9sT4rQzGgeyyGIrcM+GH5uVYg2C6wZIxAIJq7Ng3QLT79tl8FUwDXhyq9SusfknOrofAKqvgyQ==}
@@ -1764,8 +1764,8 @@ packages:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
-  mrmime@2.0.0:
-    resolution: {integrity: sha512-eu38+hdgojoyq63s+yTpN4XMBdt5l8HhMhc4VKLO9KM5caLIBvUm4thi7fFaxyTmCKeNnXZ5pAlBwCUnhA09uw==}
+  mrmime@2.0.1:
+    resolution: {integrity: sha512-Y3wQdFg2Va6etvQ5I82yUhGdsKrcYox6p7FfL1LbK2J4V01F9TGlepTIhnK24t7koZibmg82KGglhA1XK5IsLQ==}
     engines: {node: '>=10'}
 
   ms@2.1.3:
@@ -1886,8 +1886,8 @@ packages:
     peerDependencies:
       preact: '>=10'
 
-  preact@10.26.0:
-    resolution: {integrity: sha512-6ugi/Mb7lyV5RA6KlnijFyDLMU253i7L0RRiObIzDoqj59KT9iTeNJbA/YGw6M7jP4vxaab0DOA8DgodTOA6EQ==}
+  preact@10.26.2:
+    resolution: {integrity: sha512-0gNmv4qpS9HaN3+40CLBAnKe0ZfyE4ZWo5xKlC1rVrr0ckkEvJvAQqKaHANdFKsGstoxrY4AItZ7kZSGVoVjgg==}
 
   preferred-pm@4.1.1:
     resolution: {integrity: sha512-rU+ZAv1Ur9jAUZtGPebQVQPzdGhNzaEiQ7VL9+cjsAWPHFYOccNXPNiev1CCDSOg/2j7UujM7ojNhpkuILEVNQ==}
@@ -2610,15 +2610,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/preact@3.5.4(@babel/core@7.26.9)(@types/node@22.13.4)(lightningcss@1.29.1)(preact@10.26.0)(terser@5.37.0)':
+  '@astrojs/preact@3.5.4(@babel/core@7.26.9)(@types/node@22.13.4)(lightningcss@1.29.1)(preact@10.26.2)(terser@5.37.0)':
     dependencies:
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.9)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.9)
-      '@preact/preset-vite': 2.8.2(@babel/core@7.26.9)(preact@10.26.0)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))
-      '@preact/signals': 1.3.2(preact@10.26.0)
+      '@preact/preset-vite': 2.8.2(@babel/core@7.26.9)(preact@10.26.2)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))
+      '@preact/signals': 1.3.2(preact@10.26.2)
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.9)
-      preact: 10.26.0
-      preact-render-to-string: 6.5.13(preact@10.26.0)
+      preact: 10.26.2
+      preact-render-to-string: 6.5.13(preact@10.26.2)
       vite: 5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0)
     transitivePeerDependencies:
       - '@babel/core'
@@ -3098,16 +3098,16 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@preact/compat@18.3.1(preact@10.26.0)':
+  '@preact/compat@18.3.1(preact@10.26.2)':
     dependencies:
-      preact: 10.26.0
+      preact: 10.26.2
 
-  '@preact/preset-vite@2.8.2(@babel/core@7.26.9)(preact@10.26.0)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))':
+  '@preact/preset-vite@2.8.2(@babel/core@7.26.9)(preact@10.26.2)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@babel/plugin-transform-react-jsx': 7.25.9(@babel/core@7.26.9)
       '@babel/plugin-transform-react-jsx-development': 7.25.9(@babel/core@7.26.9)
-      '@prefresh/vite': 2.4.7(preact@10.26.0)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))
+      '@prefresh/vite': 2.4.7(preact@10.26.2)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))
       '@rollup/pluginutils': 4.2.1
       babel-plugin-transform-hook-names: 1.0.2(@babel/core@7.26.9)
       debug: 4.4.0
@@ -3124,27 +3124,27 @@ snapshots:
 
   '@preact/signals-core@1.8.0': {}
 
-  '@preact/signals@1.3.2(preact@10.26.0)':
+  '@preact/signals@1.3.2(preact@10.26.2)':
     dependencies:
       '@preact/signals-core': 1.8.0
-      preact: 10.26.0
+      preact: 10.26.2
 
   '@prefresh/babel-plugin@0.5.1': {}
 
-  '@prefresh/core@1.5.3(preact@10.26.0)':
+  '@prefresh/core@1.5.3(preact@10.26.2)':
     dependencies:
-      preact: 10.26.0
+      preact: 10.26.2
 
   '@prefresh/utils@1.2.0': {}
 
-  '@prefresh/vite@2.4.7(preact@10.26.0)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))':
+  '@prefresh/vite@2.4.7(preact@10.26.2)(vite@5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0))':
     dependencies:
       '@babel/core': 7.26.9
       '@prefresh/babel-plugin': 0.5.1
-      '@prefresh/core': 1.5.3(preact@10.26.0)
+      '@prefresh/core': 1.5.3(preact@10.26.2)
       '@prefresh/utils': 1.2.0
       '@rollup/pluginutils': 4.2.1
-      preact: 10.26.0
+      preact: 10.26.2
       vite: 5.4.14(@types/node@22.13.4)(lightningcss@1.29.1)(terser@5.37.0)
     transitivePeerDependencies:
       - supports-color
@@ -3470,7 +3470,7 @@ snapshots:
       magic-string: 0.30.17
       magicast: 0.3.5
       micromatch: 4.0.8
-      mrmime: 2.0.0
+      mrmime: 2.0.1
       neotraverse: 0.6.18
       p-limit: 6.2.0
       p-queue: 8.1.0
@@ -3562,7 +3562,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001700
-      electron-to-chromium: 1.5.101
+      electron-to-chromium: 1.5.102
       node-releases: 2.0.19
       update-browserslist-db: 1.1.2(browserslist@4.24.4)
 
@@ -3713,7 +3713,7 @@ snapshots:
 
   dset@3.1.4: {}
 
-  electron-to-chromium@1.5.101: {}
+  electron-to-chromium@1.5.102: {}
 
   emmet@2.4.11:
     dependencies:
@@ -4444,7 +4444,7 @@ snapshots:
       braces: 3.0.3
       picomatch: 2.3.1
 
-  mrmime@2.0.0: {}
+  mrmime@2.0.1: {}
 
   ms@2.1.3: {}
 
@@ -4553,11 +4553,11 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  preact-render-to-string@6.5.13(preact@10.26.0):
+  preact-render-to-string@6.5.13(preact@10.26.2):
     dependencies:
-      preact: 10.26.0
+      preact: 10.26.2
 
-  preact@10.26.0: {}
+  preact@10.26.2: {}
 
   preferred-pm@4.1.1:
     dependencies:
@@ -4583,10 +4583,10 @@ snapshots:
 
   react-fast-compare@3.2.2: {}
 
-  react-snowfall@2.2.0(@preact/compat@18.3.1(preact@10.26.0))(@preact/compat@18.3.1(preact@10.26.0)):
+  react-snowfall@2.2.0(@preact/compat@18.3.1(preact@10.26.2))(@preact/compat@18.3.1(preact@10.26.2)):
     dependencies:
-      react: '@preact/compat@18.3.1(preact@10.26.0)'
-      react-dom: '@preact/compat@18.3.1(preact@10.26.0)'
+      react: '@preact/compat@18.3.1(preact@10.26.2)'
+      react-dom: '@preact/compat@18.3.1(preact@10.26.2)'
       react-fast-compare: 3.2.2
 
   readdirp@3.6.0:
