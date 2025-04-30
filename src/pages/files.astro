@@ -1,0 +1,38 @@
+---
+const pageTitle = "Local Files";
+import "../css/global.css";
+import { Snow } from "../components/Snow.tsx";
+---
+<html lang="en" class="bg-new-blue-one">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="A collection of audio files" />
+        <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/tw5ja0seu/elephant.webp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="preload" href="https://ik.imagekit.io/tw5ja0seu/IBM%20Plex%20Mono-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="https://ik.imagekit.io/tw5ja0seu/Pixelify%20Sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <title>{pageTitle}</title>
+    </head>
+
+    <body class="text-slate-200">
+        <div class="flex h-screen">
+            <div class="flex items-center m-auto justify-center align-middle font-ibm-plex-mono">
+                <ul class="list-none text-lg place-content-center text-left">
+                    <li class="font-pixelify-sans text-3xl">local files</li> <br />
+                    <li><a href="artist/bcnr" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">black country, new road</a></li>
+                    <li><a href="artist/boris" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">boris</a></li>
+                    <li><a href="artist/dz" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">della zyr</a></li>
+                    <li><a href="artist/ichiko" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">ichiko aoba</a></li>
+                    <li><a href="artist/mbv" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">my bloody valentine</a></li>
+                    <li><a href="artist/sc" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">shadow community</a></li>
+                    <li><a href="artist/swans" rel="dns-prefetch" class=" hover:bg-link-hover opacity-80">swans</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <Snow client:visible client:only="preact" />
+    </body>
+
+</html>
