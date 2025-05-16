@@ -1,0 +1,61 @@
+---
+const pageTitle = "offline";
+import { Snow } from "../components/Snow.tsx";
+import "../css/global.css";
+---
+
+<html lang="en" class="bg-new-blue-one">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Unreleased music" />
+        <link rel="icon" type="image/x-icon" href="https://ik.imagekit.io/tw5ja0seu/elephant.webp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <link rel="preload" href="https://ik.imagekit.io/tw5ja0seu/Pixelify%20Sans-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" href="https://ik.imagekit.io/tw5ja0seu/IBM%20Plex%20Mono-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <title>{pageTitle}</title>
+    </head>
+    <body class="text-slate-200">
+        <header class="p-8 md:p-16 md:pb-0 max-w-full md:w-[55rem] space-y-5 font-ibm-plex-mono mx-auto my-auto block align-middle">
+            <h4 class="flex gap-2 items-center text-2xl font-bold font-pixelify-sans">
+                local files
+            </h4>
+
+            <p class="font-semibold list-none">
+                - <a rel="dns-prefetch" class="text-blue-300 underline" href="https://bit.ly/mylocalfiles">Personal Drive</a>
+            </p>
+            <h4 class="flex gap-2 items-center text-xl font-bold font-pixelify-sans">
+                by artist (a-z)
+            </h4>
+            <div>
+                <ul class="font-semibold list-none">
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://unreleasedalexg.github.io/">Alex G</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://drive.google.com/drive/folders/12MoxVKoxzHMmx83ql2oegej9ltOCZAJ9">끝이별 (laststar)</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://www.tunita.net/nsb/">Natural Snow Buildings</a></li>
+                </ul>
+            </div>
+            <h4 class="flex gap-2 items-center text-xl font-bold font-pixelify-sans">
+                collections (a-z)
+            </h4>
+            <div>
+                <ul class="font-semibold list-none">
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://drive.google.com/drive/folders/1M0K5jLdkw4BEnR-Apm0RljPL_A-xwnlw">Swans - Fundraisers</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://archive.org/details/radiohead-minidiscs-hacked">Radiohead - MiniDiscs</a></li>
+                </ul>
+            </div>
+
+            <h4 class="flex gap-2 items-center text-xl font-bold font-pixelify-sans">
+                useful websites (a-z)
+            </h4>
+            <div>
+                <ul class="font-semibold list-none">
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://archive.org/details/audio">Archive.org</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://bandcamp.com/">Bandcamp</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://mixtapemonkey.com/">Mixtape Monkey</a></li>
+                    <li>- <a rel="dns-prefetch" class="text-blue-300 underline" href="https://docs.google.com/spreadsheets/d/1zoOIaNbBvfuL3sS3824acpqGxOdSZSIHM8-nI9C-Vfc/">Tracker Hub</a></li>
+                </ul>
+            </div>
+        </header>
+        <Snow client:visible client:only="preact" />
+    </body>
+</html>
