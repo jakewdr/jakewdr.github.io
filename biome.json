@@ -9,9 +9,7 @@
         "ignoreUnknown": false,
         "include": [
             "src/**/**",
-            "astro.config.mts",
-            "postcss.config.mts",
-            "tailwind.config.mts"
+            "astro.config.mts"
         ]
     },
     "formatter": {
