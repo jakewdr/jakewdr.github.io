@@ -7,10 +7,7 @@
     },
     "files": {
         "ignoreUnknown": false,
-        "include": [
-            "src/**/**",
-            "astro.config.mts"
-        ]
+        "include": ["src/**/**", "astro.config.mts"]
     },
     "formatter": {
         "enabled": true,
