@@ -12,7 +12,7 @@ export default defineConfig({
             transformer: "lightningcss",
         },
         build: {
-            minify: "esbuild",
+            minify: "terser",
             cssMinify: "lightningcss",
             chunkSizeWarningLimit: 100,
             cssCodeSplit: true,
