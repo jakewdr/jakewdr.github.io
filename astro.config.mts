@@ -7,6 +7,14 @@ import { visualizer } from "rollup-plugin-visualizer";
 export default defineConfig({
     site: "https://jakewdr.github.io",
     compressHTML: true,
+    security: {
+        csp: true,
+    },
+    experimental: {
+        queuedRendering: {
+            enabled: true,
+        },
+    },
     vite: {
         css: {
             transformer: "lightningcss",
