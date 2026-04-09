@@ -10,11 +10,6 @@ export default defineConfig({
     security: {
         csp: true,
     },
-    experimental: {
-        queuedRendering: {
-            enabled: true,
-        },
-    },
     vite: {
         css: {
             transformer: "lightningcss",
