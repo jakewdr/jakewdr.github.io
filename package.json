@@ -11,23 +11,23 @@
         "format": "pnpm biome check --write"
     },
     "dependencies": {
-        "@astrojs/preact": "^5.1.1",
+        "@astrojs/preact": "^5.1.2",
         "@preact/compat": "^18.3.1",
         "preact": "^10.29.1",
         "react-snowfall": "^2.4.0"
     },
     "devDependencies": {
-        "@astrojs/check": "^0.9.8",
+        "@astrojs/check": "^0.9.9",
         "@biomejs/biome": "^1.9.4",
-        "@tailwindcss/vite": "^4.2.2",
+        "@tailwindcss/vite": "^4.2.4",
         "@types/node": "^22.19.17",
-        "astro": "^6.1.5",
+        "astro": "^6.2.2",
         "lightningcss": "^1.32.0",
         "react": "npm:@preact/compat@18.3.1",
         "react-dom": "npm:@preact/compat@18.3.1",
         "rollup-plugin-visualizer": "^5.14.0",
-        "tailwindcss": "^4.2.2",
-        "terser": "^5.46.1",
+        "tailwindcss": "^4.2.4",
+        "terser": "^5.46.2",
         "typescript": "^5.9.3"
     },
     "packageManager": "pnpm@9.15.0",
