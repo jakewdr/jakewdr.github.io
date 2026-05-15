@@ -8,7 +8,7 @@ export default defineConfig({
     site: "https://jakewdr.github.io",
     compressHTML: true,
     security: {
-        csp: true,
+        csp: false,
     },
     vite: {
         css: {
