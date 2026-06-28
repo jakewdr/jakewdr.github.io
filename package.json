@@ -13,7 +13,7 @@
     "dependencies": {
         "@astrojs/preact": "^6.0.0",
         "@preact/compat": "^18.3.1",
-        "preact": "^10.29.2",
+        "preact": "^10.29.3",
         "react-snowfall": "^2.4.0"
     },
     "devDependencies": {
@@ -21,7 +21,7 @@
         "@biomejs/biome": "^1.9.4",
         "@tailwindcss/vite": "^4.3.1",
         "@types/node": "^22.20.0",
-        "astro": "^7.0.0",
+        "astro": "^7.0.3",
         "lightningcss": "^1.32.0",
         "react": "npm:@preact/compat@18.3.1",
         "react-dom": "npm:@preact/compat@18.3.1",
